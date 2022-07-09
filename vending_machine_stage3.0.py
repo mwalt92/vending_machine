@@ -67,7 +67,7 @@ def clear_frame():
     for widgets in frame.winfo_children():
         widgets.destroy()
 
-def drink_choice(value):
+def drink_choice_f(value):
     global drink_choice
     drink_choice = value
     print(drink_choice)
@@ -217,35 +217,35 @@ while continue_choice == "yes":
     drink_choice_label.grid(row=0,column=0, columnspan=2)
 
     # Regular Soda Buttons #
-    button_coca_cola = Button(win3, text="Coca-Cola", width=20, height=2, command= lambda: drink_choice("Coca-Cola"))
+    button_coca_cola = Button(win3, text="Coca-Cola", width=20, height=2, command= lambda: drink_choice_f("Coca-Cola"))
     button_coca_cola.grid(row=1, column=0)
 
-    button_mountain_dew = Button(win3, text="Mountain Dew", width=20, height=2, command= lambda: drink_choice("Mountain Dew"))
+    button_mountain_dew = Button(win3, text="Mountain Dew", width=20, height=2, command= lambda: drink_choice_f("Mountain Dew"))
     button_mountain_dew.grid(row=1, column=1)
 
-    button_pepsi = Button(win3, text="Pepsi", width=20, height=2, command= lambda: drink_choice("Pepsi"))
+    button_pepsi = Button(win3, text="Pepsi", width=20, height=2, command= lambda: drink_choice_f("Pepsi"))
     button_pepsi.grid(row=2, column=0)
 
-    button_sprite = Button(win3, text="Sprite", width=20, height=2, command= lambda: drink_choice("Sprite"))
+    button_sprite = Button(win3, text="Sprite", width=20, height=2, command= lambda: drink_choice_f("Sprite"))
     button_sprite.grid(row=2, column=1)
 
-    button_dr_pepper = Button(win3, text="Dr. Pepper", width=20, height=2, command= lambda: drink_choice("Dr. Pepper"))
+    button_dr_pepper = Button(win3, text="Dr. Pepper", width=20, height=2, command= lambda: drink_choice_f("Dr. Pepper"))
     button_dr_pepper.grid(row=3, column=0, columnspan=2)
 
     # Diet Soda Buttons #
-    button_d_coca_cola = Button(win3, text="Diet Coke", width=20, height=2, command= lambda: drink_choice("Diet Coke"))
+    button_d_coca_cola = Button(win3, text="Diet Coke", width=20, height=2, command= lambda: drink_choice_f("Diet Coke"))
     button_d_coca_cola.grid(row=4, column=0)
 
-    button_d_mountain_dew = Button(win3, text="Diet Mountain Dew", width=20, height=2, command= lambda: drink_choice("Diet Mountain Dew"))
+    button_d_mountain_dew = Button(win3, text="Diet Mountain Dew", width=20, height=2, command= lambda: drink_choice_f("Diet Mountain Dew"))
     button_d_mountain_dew.grid(row=4, column=1)
 
-    button_d_pepsi = Button(win3, text="Diet Pepsi", width=20, height=2, command= lambda: drink_choice("Diet Pepsi"))
+    button_d_pepsi = Button(win3, text="Diet Pepsi", width=20, height=2, command= lambda: drink_choice_f("Diet Pepsi"))
     button_d_pepsi.grid(row=5, column=0)
 
-    button_d_sprite = Button(win3, text="Sprite Zero", width=20, height=2, command= lambda: drink_choice("Sprite Zero"))
+    button_d_sprite = Button(win3, text="Sprite Zero", width=20, height=2, command= lambda: drink_choice_f("Sprite Zero"))
     button_d_sprite.grid(row=5, column=1)
 
-    button_d_dr_pepper = Button(win3, text="Diet Dr. Pepper", width=20, height=2, command= lambda: drink_choice("Diet Dr. Pepper"))
+    button_d_dr_pepper = Button(win3, text="Diet Dr. Pepper", width=20, height=2, command= lambda: drink_choice_f("Diet Dr. Pepper"))
     button_d_dr_pepper.grid(row=6, column=0, columnspan=2)
 
     # Current Stock of Soda #
